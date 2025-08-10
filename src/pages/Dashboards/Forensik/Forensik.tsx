@@ -87,7 +87,6 @@ const Forensik = () => {
                     <option value="suhu">Suhu Ayam</option>
                     <option value="suhuling">Suhu Lingkungan Kandang Ayam</option>
                     <option value="kelembaban">Kelembaban Ayam</option>
-                    <option value="CO2">Kadar CO2</option>
                     <option value="NH3">Kadar Amonia</option>
                     <option value="Light">Cahaya</option>
                     <option value="DO">Dissolved Oxygen</option>

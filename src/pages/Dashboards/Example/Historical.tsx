@@ -18,7 +18,6 @@ interface RTDData {
 const sensorEndpoints: Record<string, string> = {
   suhu: "https://be-pengmas2.vercel.app/api/sensor/Temperature",
   kelembaban: "https://be-pengmas2.vercel.app/api/sensor/Humidity",
-  CO2: "https://be-pengmas2.vercel.app/api/sensor/CO2",
   NH3: "https://be-pengmas2.vercel.app/api/sensor/NH3",
   debu: "https://be-pengmas2.vercel.app/api/sensor/PM10",
   PM2_5: "https://be-pengmas2.vercel.app/api/sensor/PM2_5",
@@ -30,7 +29,6 @@ const Historis: React.FC = () => {
   const [sensorData, setSensorData] = useState<SensorData>({
     suhu: [],
     kelembaban: [],
-    CO2: [],
     NH3: [],
     cahaya: [],
   });
@@ -106,15 +104,6 @@ const Historis: React.FC = () => {
       series: [{ data: sensorData.kelembaban?.map(item => item.nilai) || [] }],
       chartColor: ['#32CD32'],
       xaxisCategories: sensorData.kelembaban?.map(item => item.tanggal) || [],
-    },
-    {
-      id: 'co2-level-chart',
-      title: 'Kadar CO2',
-      min: 0,
-      max: 2000,
-      series: [{ data: sensorData.CO2?.map(item => item.nilai) || [] }],
-      chartColor: ['#1E90FF'],
-      xaxisCategories: sensorData.CO2?.map(item => item.tanggal) || [],
     },
     {
       id: 'rtd-temp-chart',
