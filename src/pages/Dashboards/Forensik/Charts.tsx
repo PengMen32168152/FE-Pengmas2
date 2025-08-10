@@ -13,7 +13,7 @@ const EnvironmentComparisonChartSuhu = ({ chartId, selectedDateRange }: any) => 
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensic/Temperature?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensic/Temperature?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Suhu:", data);
@@ -91,7 +91,7 @@ const EnvironmentComparisonChartRTDTemp = ({ chartId, selectedDateRange }: any) 
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensic/RTD_Temp?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensic/RTD_Temp?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Suhu Lingkungan (RTD):", data);
@@ -171,7 +171,7 @@ const EnvironmentComparisonChartKelembaban = ({ chartId, selectedDateRange }: an
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensic/Humidity?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensic/Humidity?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Kelembaban:", data);
@@ -249,7 +249,7 @@ const EnvironmentComparisonChartCO2 = ({ chartId, selectedDateRange }: any) => {
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensic/CO2?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensic/CO2?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data CO2:", data);
@@ -330,7 +330,7 @@ const EnvironmentComparisonChartLihgt = ({ chartId, selectedDateRange }: any) =>
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensic/Light?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensic/Light?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Cahaya:", data);
@@ -408,7 +408,7 @@ const EnvironmentComparisonChartNH3 = ({ chartId, selectedDateRange }: any) => {
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensic/NH3?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensic/NH3?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data NH3:", data);
@@ -486,7 +486,7 @@ const EnvironmentComparisonChartDO = ({ chartId, selectedDateRange }: any) => {
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/DissolvedOxygen?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/DissolvedOxygen?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data DO:", data);
@@ -564,7 +564,7 @@ const EnvironmentComparisonChartEC = ({ chartId, selectedDateRange }: any) => {
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/EC?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/EC?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data EC:", data);
@@ -642,7 +642,7 @@ const EnvironmentComparisonChartSuhuAir = ({ chartId, selectedDateRange }: any) 
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/Temperature?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/Temperature?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Temperature Air:", data);
@@ -721,7 +721,7 @@ const EnvironmentComparisonChartpH = ({ chartId, selectedDateRange }: any) => {
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/pH?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/pH?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data pH:", data);
@@ -800,7 +800,7 @@ const EnvironmentComparisonChartMoisture = ({ chartId, selectedDateRange }: any)
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/Moisture?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/Moisture?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data NH3:", data);
@@ -879,7 +879,7 @@ const EnvironmentComparisonChartNitrate = ({ chartId, selectedDateRange }: any) 
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/Nitrate?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/Nitrate?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Nitrate:", data);
@@ -956,7 +956,7 @@ const EnvironmentComparisonChartNitrogen = ({ chartId, selectedDateRange }: any)
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/Nitrogen?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/Nitrogen?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Nitrogen:", data);
@@ -1034,7 +1034,7 @@ const EnvironmentComparisonChartFosfor = ({ chartId, selectedDateRange }: any) =
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/Phosphorus?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/Phosphorus?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Fosfor:", data);
@@ -1112,7 +1112,7 @@ const EnvironmentComparisonChartSalinity = ({ chartId, selectedDateRange }: any)
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-ciamis.vercel.app/api/forensik/Salinity?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensik/Salinity?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Salinity:", data);

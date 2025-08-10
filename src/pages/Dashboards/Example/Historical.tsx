@@ -16,14 +16,14 @@ interface RTDData {
 }
 
 const sensorEndpoints: Record<string, string> = {
-  suhu: "https://be-ciamis.vercel.app/api/sensor/Temperature",
-  kelembaban: "https://be-ciamis.vercel.app/api/sensor/Humidity",
-  CO2: "https://be-ciamis.vercel.app/api/sensor/CO2",
-  NH3: "https://be-ciamis.vercel.app/api/sensor/NH3",
-  debu: "https://be-ciamis.vercel.app/api/sensor/PM10",
-  PM2_5: "https://be-ciamis.vercel.app/api/sensor/PM2_5",
-  cahaya: "https://be-ciamis.vercel.app/api/sensor/Light",
-  RTD_Temp: "https://be-ciamis.vercel.app/api/sensor/RTD_Temp", // Endpoint for RTD_Temp
+  suhu: "https://be-pengmas2.vercel.app/api/sensor/Temperature",
+  kelembaban: "https://be-pengmas2.vercel.app/api/sensor/Humidity",
+  CO2: "https://be-pengmas2.vercel.app/api/sensor/CO2",
+  NH3: "https://be-pengmas2.vercel.app/api/sensor/NH3",
+  debu: "https://be-pengmas2.vercel.app/api/sensor/PM10",
+  PM2_5: "https://be-pengmas2.vercel.app/api/sensor/PM2_5",
+  cahaya: "https://be-pengmas2.vercel.app/api/sensor/Light",
+  RTD_Temp: "https://be-pengmas2.vercel.app/api/sensor/RTD_Temp", // Endpoint for RTD_Temp
 };
 
 const Historis: React.FC = () => {

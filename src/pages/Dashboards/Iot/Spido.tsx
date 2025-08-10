@@ -112,7 +112,7 @@ const Spido = () => {
 
   const fetchSensorData = async (sensorType: string) => {
     try {
-      const response = await fetch(`https://be-ciamis.vercel.app/api/latest/${sensorType}`);
+      const response = await fetch(`https://be-pengmas2.vercel.app/api/latest/${sensorType}`);
       const data = await response.json();
       if (data && data.nilai !== undefined) {
         setSensorData((prevData) => ({
@@ -126,7 +126,7 @@ const Spido = () => {
   };
 
 useEffect(() => {
-  fetch('https://be-ciamis.vercel.app/day/get_day')
+  fetch('https://be-pengmas2.vercel.app/day/get_day')
     .then((res) => res.json())
     .then((data) => {
       const parsedDay = parseInt(data.day); // konversi ke integer

@@ -15,7 +15,7 @@ const FCRChart: React.FC = () => {
 
   useEffect(() => {
     // Fetch the data from the backend
-    fetch('https://be-ciamis.vercel.app/get_fcr')
+    fetch('https://be-pengmas2.vercel.app/get_fcr')
       .then((response) => response.json())
       .then((data) => {
         setFcrData(data);

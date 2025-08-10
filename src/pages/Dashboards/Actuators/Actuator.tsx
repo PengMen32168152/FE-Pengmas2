@@ -158,7 +158,7 @@ const formatTime = (dateString: string) => {
         };
 
         // Mengirim data menggunakan fetch ke localhost
-        fetch("https://be-ciamis.vercel.app/manual_control", {
+        fetch("https://be-pengmas2.vercel.app/manual_control", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -218,7 +218,7 @@ const formatTime = (dateString: string) => {
         };
 
         // Mengirim data menggunakan fetch ke localhost
-        fetch("https://be-ciamis.vercel.app/manual_control", {
+        fetch("https://be-pengmas2.vercel.app/manual_control", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -281,7 +281,7 @@ const formatTime = (dateString: string) => {
         };
 
         // Mengirim data menggunakan fetch ke localhost
-        fetch("https://be-ciamis.vercel.app/manual_control", {
+        fetch("https://be-pengmas2.vercel.app/manual_control", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

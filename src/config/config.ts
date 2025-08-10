@@ -16,15 +16,16 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 
 const DB_CONFIG = {
-  apiKey: "AIzaSyBcQ1reTukrVZAHVfF1ACuTO5uMfH5nGHE",
-  authDomain: "taayam-9bab6.firebaseapp.com",
-  databaseURL: "https://taayam-9bab6-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "taayam-9bab6",
-  storageBucket: "taayam-9bab6.firebasestorage.app",
-  messagingSenderId: "612969401904",
-  appId: "1:612969401904:web:24becee2bc4280f82067f5",
-  measurementId: "G-WH6C9NJPBD"
+  apiKey: "AIzaSyDevHpf4JlVlLcx2fIMb_I2LG3exvI5AKI",
+  authDomain: "pengmasmentawai-d63e2.firebaseapp.com",
+  databaseURL: "https://pengmasmentawai-d63e2-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "pengmasmentawai-d63e2",
+  storageBucket: "pengmasmentawai-d63e2.firebasestorage.app",
+  messagingSenderId: "942595067719",
+  appId: "1:942595067719:web:9ddcf0c2297df9e6100662",
+  measurementId: "G-DHCVKFTVSG"
 };
+
 
 
 
@@ -48,7 +49,7 @@ const auth = getAuth(app);
 
 // Sign in using email and password
 const signInWithEmail = async () => {
-const email = "taayam14@gmail.com"; // User email
+const email = "pengmasmentawai@gmail.com"; // User email
 const password = "S1dangjuli"; // User password
 
 try {
