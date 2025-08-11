@@ -61,7 +61,7 @@ const Historis: React.FC = () => {
   useEffect(() => {
     // Fetch data for all sensors except RTD_Temp
     Object.keys(sensorEndpoints).forEach(sensorType => {
-      if (sensorType !== 'RTD_Temp') {
+      if (sensorType !== 'RTDTemp') {
         fetchSensorData(sensorType as keyof SensorData);
       }
     });
@@ -72,7 +72,7 @@ const Historis: React.FC = () => {
     const intervalId = setInterval(() => {
       // Fetch data for all sensors except RTD_Temp
       Object.keys(sensorEndpoints).forEach(sensorType => {
-        if (sensorType !== 'RTD_Temp') {
+        if (sensorType !== 'RTDTemp') {
           fetchSensorData(sensorType as keyof SensorData);
         }
       });
