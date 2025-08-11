@@ -22,7 +22,7 @@ const sensorEndpoints: Record<string, string> = {
   // debu: "https://be-pengmas2.vercel.app/api/sensor/PM10",
   // PM2_5: "https://be-pengmas2.vercel.app/api/sensor/PM2_5",
   // cahaya: "https://be-pengmas2.vercel.app/api/sensor/Light",
-  RTDTemp: "https://be-pengmas2.vercel.app/api/sensor/RTD_Temp", // Endpoint for RTD_Temp
+  RTDTemp: "https://be-pengmas2.vercel.app/api/sensor/RTDTemp", // Endpoint for RTD_Temp
 };
 
 const Historis: React.FC = () => {

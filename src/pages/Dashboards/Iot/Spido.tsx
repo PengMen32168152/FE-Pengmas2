@@ -212,7 +212,7 @@ useEffect(() => {
       /> */}
             <SensorCard
         title="Suhu Lingkungan"
-        data={sensorData.RTD_Temp?.nilai ?? 0}
+        data={sensorData.RTDTemp?.nilai ?? 0}
         unit="°C"
         sensorColor="red"
         id="gauge-temp-env"
