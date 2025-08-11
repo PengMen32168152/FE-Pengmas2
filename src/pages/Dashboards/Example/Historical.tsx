@@ -5,9 +5,9 @@ import ReactApexChart from "react-apexcharts";
 interface SensorData {
   suhu: { tanggal: string; nilai: number }[];
   kelembaban: { tanggal: string; nilai: number }[];
-  CO2: { tanggal: string; nilai: number }[];
+  // CO2: { tanggal: string; nilai: number }[];
   NH3: { tanggal: string; nilai: number }[];
-  cahaya: { tanggal: string; nilai: number }[];
+  // cahaya: { tanggal: string; nilai: number }[];
 }
 
 interface RTDData {
@@ -19,10 +19,10 @@ const sensorEndpoints: Record<string, string> = {
   suhu: "https://be-pengmas2.vercel.app/api/sensor/Temperature",
   kelembaban: "https://be-pengmas2.vercel.app/api/sensor/Humidity",
   NH3: "https://be-pengmas2.vercel.app/api/sensor/NH3",
-  debu: "https://be-pengmas2.vercel.app/api/sensor/PM10",
-  PM2_5: "https://be-pengmas2.vercel.app/api/sensor/PM2_5",
-  cahaya: "https://be-pengmas2.vercel.app/api/sensor/Light",
-  RTD_Temp: "https://be-pengmas2.vercel.app/api/sensor/RTD_Temp", // Endpoint for RTD_Temp
+  // debu: "https://be-pengmas2.vercel.app/api/sensor/PM10",
+  // PM2_5: "https://be-pengmas2.vercel.app/api/sensor/PM2_5",
+  // cahaya: "https://be-pengmas2.vercel.app/api/sensor/Light",
+  RTDTemp: "https://be-pengmas2.vercel.app/api/sensor/RTD_Temp", // Endpoint for RTD_Temp
 };
 
 const Historis: React.FC = () => {
@@ -30,7 +30,7 @@ const Historis: React.FC = () => {
     suhu: [],
     kelembaban: [],
     NH3: [],
-    cahaya: [],
+    // cahaya: [],
   });
 
   const [rtdData, setRtdData] = useState<RTDData[]>([]); // State for RTD_Temp data
@@ -124,15 +124,15 @@ const Historis: React.FC = () => {
       xaxisCategories: sensorData.NH3?.map(item => item.tanggal) || [],
     },
 
-    {
-      id: 'light-level-chart',
-      title: 'Intensitas Cahaya',
-      min: 0,
-      max: 100,
-      series: [{ data: sensorData.cahaya?.map(item => item.nilai) || [] }],
-      chartColor: ['#FFD700'],
-      xaxisCategories: sensorData.cahaya?.map(item => item.tanggal) || [],
-    },
+    // {
+    //   id: 'light-level-chart',
+    //   title: 'Intensitas Cahaya',
+    //   min: 0,
+    //   max: 100,
+    //   series: [{ data: sensorData.cahaya?.map(item => item.nilai) || [] }],
+    //   chartColor: ['#FFD700'],
+    //   xaxisCategories: sensorData.cahaya?.map(item => item.tanggal) || [],
+    // },
   ];
 
   return (

@@ -223,11 +223,11 @@ const Spido = () => {
         sensorColor="yellow"
         id="gauge-light"
         minValue={0}
-        maxValue={1.5}
+        maxValue={50}
         thresholds={[
-          { limit: 0.5, color: '#5BE12C', tooltipText: 'Aman' },
-          { limit: 0.6, color: '#F5CD19', tooltipText: 'Tinggi' },
-          { limit: 1, color: '#EA4228', tooltipText: 'Berbahaya'},
+          { limit: 30, color: '#5BE12C', tooltipText: 'Aman' },
+          { limit: 35, color: '#F5CD19', tooltipText: 'Tinggi' },
+          { limit: 50, color: '#EA4228', tooltipText: 'Berbahaya'},
         ]}
       />
     </>

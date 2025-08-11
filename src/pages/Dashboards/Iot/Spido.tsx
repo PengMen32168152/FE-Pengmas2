@@ -4,10 +4,10 @@ import GaugeComponent from 'react-gauge-component';
 interface SensorData {
   Temperature: { nilai: number } | null;
   Humidity: { nilai: number } | null;
-  Light: { nilai: number } | null;
+  // Light: { nilai: number } | null;
   // CO2: { nilai: number } | null;
   NH3: { nilai: number } | null;
-  RTD_Temp: { nilai: number } | null;
+  RTDTemp: { nilai: number } | null;
 }
 
 const getTempThreshold = (dayValue: number): [number, number] => {
@@ -45,7 +45,7 @@ const SensorCard = ({
   thresholds: Array<{ limit: number; color: string; tooltipText: string }>;
 }) => {
   return (
-    <div className={`order-2 md:col-span-6 lg:col-span-4 col-span-12 2xl:order-1 card 2xl:col-span-4 group-data-[skin=bordered]:border-${sensorColor}-500/20 relative overflow-hidden`}>
+    <div className={`order-2 md:col-span-6 lg:col-span-3 col-span-12 2xl:order-1 card 2xl:col-span-3 group-data-[skin=bordered]:border-${sensorColor}-500/20 relative overflow-hidden`}>
       <div className="card-body">
         <p className="dark:text-white text-black">{title}</p>
         <div className="flex items-center justify-center dark:text-white text-black">
@@ -102,10 +102,10 @@ const Spido = () => {
   const [sensorData, setSensorData] = useState<SensorData>({
     Temperature: null,
     Humidity: null,
-    Light: null,
+    // Light: null,
     // CO2: null,
     NH3: null,
-    RTD_Temp: null,
+    RTDTemp: null,
   });
 
   const [dayValue, setDayValue] = useState<number>(1);
@@ -143,7 +143,7 @@ useEffect(() => {
 }, []);
 
   useEffect(() => {
-    const sensorTypes = ['Temperature', 'Humidity', 'Light', 'NH3', 'RTD_Temp'];
+    const sensorTypes = ['Temperature', 'Humidity','NH3', 'RTD_Temp'];
     sensorTypes.forEach((sensorType) => fetchSensorData(sensorType));
 
     const intervalId = setInterval(() => {
@@ -242,7 +242,7 @@ useEffect(() => {
         ]}
       />
 
-      <SensorCard
+      {/* <SensorCard
         title="Level Cahaya"
         data={sensorData.Light?.nilai ?? 0}
         unit="Lux"
@@ -255,7 +255,7 @@ useEffect(() => {
           { limit: 50, color: '#F5CD19', tooltipText: 'Cukup terang' },
           { limit: 100, color: '#EA4228', tooltipText: 'Terlalu terang' },
         ]}
-      />
+      /> */}
     </>
   );
 };
