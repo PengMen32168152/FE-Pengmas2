@@ -33,7 +33,7 @@ const SensorCard = ({
   thresholds: Array<{ limit: number; color: string; tooltipText: string }>;
 }) => {
   return (
-    <div className={`order-2 md:col-span-6 lg:col-span-6 col-span-12 2xl:order-1 card 2xl:col-span-6 group-data-[skin=bordered]:border-${sensorColor}-500/20 relative overflow-hidden`}>
+    <div className={`order-2 md:col-span-6 lg:col-span-4 col-span-12 2xl:order-1 card 2xl:col-span-4 group-data-[skin=bordered]:border-${sensorColor}-500/20 relative overflow-hidden`}>
       <div className="card-body">
         <p className="dark:text-white text-black">{title}</p>
         <div className="flex items-center justify-center dark:text-white text-black">

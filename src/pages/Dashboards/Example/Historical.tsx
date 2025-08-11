@@ -140,7 +140,7 @@ const Historis: React.FC = () => {
       <h3 className="text-black col-span-12">Data Historis 24 Jam Terakhir</h3>
       <div className="order-5 col-span-12 card 2xl:col-span-12 2xl:row-span-12">
         <div className="card-body">
-          <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-2">
             {chartData.map((item, key) => (
               <div key={key} className="py-1 first:pt-0 md:first:pt-1 md:last:pb-1 last:pb-0 md:px-1 h-50">
                 <div className="flex mb-4">
