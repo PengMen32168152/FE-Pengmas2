@@ -49,7 +49,7 @@ const Historis: React.FC = () => {
   // Function to fetch RTD_Temp data
   const fetchRtdData = async () => {
     try {
-      const response = await fetch(sensorEndpoints.RTD_Temp);
+      const response = await fetch(sensorEndpoints.RTDTemp);
       const data = await response.json();
       console.log("RTD_Temp Data:", data); // Log RTD_Temp data separately
       setRtdData(data); // Update RTD_Temp data state

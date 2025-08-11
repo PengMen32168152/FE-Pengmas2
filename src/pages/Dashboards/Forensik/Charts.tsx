@@ -91,7 +91,7 @@ const EnvironmentComparisonChartRTDTemp = ({ chartId, selectedDateRange }: any) 
         if (selectedDateRange) {
             const startDate = selectedDateRange[0].toLocaleDateString('id-ID');
             const endDate = selectedDateRange[1].toLocaleDateString('id-ID');
-            fetch(`https://be-pengmas2.vercel.app/api/forensic/RTD_Temp?start_date=${startDate}&end_date=${endDate}`)
+            fetch(`https://be-pengmas2.vercel.app/api/forensic/RTDTemp?start_date=${startDate}&end_date=${endDate}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log("Sensor Data Suhu Lingkungan (RTD):", data);
