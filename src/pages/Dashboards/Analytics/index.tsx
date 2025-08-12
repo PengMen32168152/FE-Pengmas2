@@ -31,9 +31,6 @@ useIdleLogout();
         <div className="mb-200"></div>
         <div className="mb-200"></div> */}
                 <Ayam/>
-                <div className="mb-200"></div>
-                <div className="mb-200"></div>
-                <div className="mb-200"></div>
                 <MortalitasChart/>
                 <FCRChart/>
                 {/* <Spido/> */}
