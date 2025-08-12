@@ -143,7 +143,7 @@ useEffect(() => {
 }, []);
 
   useEffect(() => {
-    const sensorTypes = ['Temperature', 'Humidity','NH3', 'RTD_Temp'];
+    const sensorTypes = ['Temperature', 'Humidity','NH3', 'RTDTemp'];
     sensorTypes.forEach((sensorType) => fetchSensorData(sensorType));
 
     const intervalId = setInterval(() => {
