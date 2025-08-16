@@ -387,77 +387,9 @@ const isDisabled = !manualControlStatus;
 
 
 
-                    {/* FAN1 */}
-
-                    <div className="order-5 md:col-span-4 lg:col-span-4 col-span-12 2xl:order-2 card 2xl:col-span-4 2xl:row-span-1">
-                        <div className="card-body">
-                            <div className="flex flex-col items-start">
-                                {/* Teks Fan Control di tengah */}
-                                <div className="w-full text-center mb-4">  {/* Membungkus Fan Control dengan div yang diberi text-center */}
-                                    <h2 className="text-sm font-medium">Inline Fan Control</h2>
-                                </div>
-                                    <div className="flex justify-between w-full mb-4">
-                                        {/* Heater Status */}
-                                        <div className="flex flex-col items-start">
-                                            <label htmlFor="heaterStatus" className="inline-block text-sm font-medium mb-1 text-left">Fan Status</label>
-                                        </div>
-
-                                        {/* On/Off Button */}
-                                        <div className="flex items-center">
-                                            <div className="relative inline-block w-10 align-middle transition duration-200 ease-in ltr:mr-2 rtl:ml-2">
-                                                <input
-                                                type="checkbox"
-                                                id="skyDefaultSwitch"
-                                                className="absolute block size-5 transition duration-300 ease-linear border-2 rounded-full appearance-none cursor-pointer border-slate-200 dark:border-zink-500 bg-white/80 dark:bg-zink-400 peer/published checked:bg-white dark:checked:bg-white ltr:checked:right-0 rtl:checked:left-0 checked:bg-none checked:border-sky-500 dark:checked:border-sky-500 arrow-none"
-                                                checked={fanStatus}
-                                                onChange={toggleFanStatus}
-                                                disabled={isDisabled}
-                                                
-                                            />
-                                            <label htmlFor="skyDefaultSwitch" className="block h-5 overflow-hidden duration-300 ease-linear border rounded-full cursor-pointer transition border-slate-200 dark:border-zink-500 bg-slate-200 dark:bg-zink-600 peer-checked/published:bg-sky-500 peer-checked/published:border-sky-500"></label>
-                                        </div>
-                                        <span className="ml-2 text-xs">{fanStatus ? "On" : "Off"}</span>
-                                    </div>
-                                </div>
-
-                                {/* Fan Speed Control */}
-                                <div className="flex flex-col items-start mb-4">
-                                    <label htmlFor="fanSpeed" className="inline-block text-sm font-medium mb-1 text-left">Fan Speed</label>
-                                    <div className="flex items-center gap-2">
-                                        <input
-                                            type="range"
-                                            min="0"
-                                            max="100"
-                                            disabled={isDisabled}
-                                            value={fanSpeed}
-                                            onChange={changeFanSpeed}
-                                            style={{ width: "70%" }}
-                                            // className="slider"
-                                            className="w-[calc(2*100%)] h-2 rounded-md bg-slate-200 dark:bg-zink-600 slider"
-                                        />
-                                        <span className="text-sm">{fanSpeed}%</span>
-                                    </div>
-                                </div>
-
-                                {/* Confirm Button */}
-                                <div className="flex justify-center">
-                                    <button
-                                        onClick={handleConfirm}
-                                        className="bg-blue-500 text-white p-2 rounded-md text-sm"
-                                    >
-                                        Confirm and Send Data
-                                    </button>
-                                </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-
-
 
             {/* FAN CONTROL 2 */}
-            <div className="order-4 md:col-span-4 lg:col-span-4 col-span-12 2xl:order-3 card 2xl:col-span-4 2xl:row-span-1">
+            <div className="order-4 md:col-span-6 lg:col-span-6 col-span-12 2xl:order-3 card 2xl:col-span-6 2xl:row-span-1">
                 <div className="card-body">
                     <div className="flex flex-col items-start">
                         {/* Fan Control 2 Title */}
@@ -535,7 +467,7 @@ const isDisabled = !manualControlStatus;
 
 
                         {/* Heater Control */}
-                        <div className="order-3 md:col-span-4 lg:col-span-4 col-span-12 2xl:order-4 card 2xl:col-span-4 2xl:row-span-1">
+                        <div className="order-3 md:col-span-6 lg:col-span-6 col-span-12 2xl:order-4 card 2xl:col-span-6 2xl:row-span-1">
                             <div className="card-body">
                                 <div className="flex flex-col items-start">
                                     {/* Heater Control Title */}
