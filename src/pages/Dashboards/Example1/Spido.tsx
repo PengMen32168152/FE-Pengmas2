@@ -177,11 +177,11 @@ const Spido = () => {
         sensorColor="green"
         id="gauge-co2"
         minValue={0}
-        maxValue={10}
+        maxValue={15}
         thresholds={[
-          { limit: 2, color: '#EA4228', tooltipText: 'Berbahaya'},
-          { limit: 3, color: '#F5CD19', tooltipText: 'Tinggi' },
-          { limit: 5, color: '#5BE12C', tooltipText: 'Aman' },
+          { limit: 5, color: '#EA4228', tooltipText: 'Berbahaya'},
+          { limit: 6, color: '#F5CD19', tooltipText: 'Tinggi' },
+          { limit: 7, color: '#5BE12C', tooltipText: 'Aman' },
         ]}
       />
             <SensorCard
